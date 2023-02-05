@@ -22,9 +22,9 @@ You will need a Subabase local db instance. Follow the [instructions](https://su
 Run:
 
 ```sh
-supabase init
-supabase start
-supabase db reset
+npx supabase login init
+npx supabase login start
+npx supabase login db reset
 ```
 
 You should now have a working DB.
