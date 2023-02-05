@@ -1,13 +1,17 @@
-# Louper - The Ethereum Diamond Inspector
+# Louper (Ethereum Diamond Inspector) for local environment
 
-A simple UI for viewing details about EVM smart contracts using EIP-2535 (Diamond Standard)
+A simple fork of the [Louper V2](https://github.com/mark3labs/louper-v2) project that can be run on a local environment for testing.
 
-**Features:**
+## Changes made
+The `src/lib/config.ts` file has been modified to simply include only the following local string:
+```
+rpcUrl: 'http://localhost:8545/',
+explorerUrl: 'http://localhost:4000',
+explorerApiUrl: 'http://localhost:4000/api',
+chainId: '1337'
+```
 
-- View diamond details include all facets and their methods
-- Read from facet methods
-- Write to facet methods
-- **MIT License** completely open source to do with as you please
+**⚠️ If you are not using Ganache or have configured it differently, you will need to change these values.**
 
 ## Development
 
